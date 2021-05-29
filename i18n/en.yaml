@@ -10,5 +10,11 @@
 - id: Expand
   translation: Expand
 
+- id: Categories
+  translation: Categories
+
+- id: Tags
+  translation: Tags
+
 - id: bookSearchConfig
   translation: '{ cache: true }'
