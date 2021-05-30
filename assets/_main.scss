@@ -389,6 +389,11 @@ ul.pagination {
   }
 }
 
+.book-menu .book-menu-content .book-languages .book-languages-list {
+  display: block;
+  position: relative;
+}
+
 // Extra space for big screens
 @media screen and (min-width: $container-max-width) {
   .book-page,

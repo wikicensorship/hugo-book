@@ -11,6 +11,9 @@
     <aside class="book-menu">
       <div class="book-menu-content">
         {{ template "menu" . }} <!-- Left menu Content -->
+        {{ if .Site.IsMultiLingual }}
+          {{ partial "languages-list" . }}
+        {{ end }}
       </div>
     </aside>
 
