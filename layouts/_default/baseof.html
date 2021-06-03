@@ -76,7 +76,7 @@
 {{ end }}
 
 {{ define "main" }}
-  <article class="markdown">
+  <article class="markdown" ondblclick="this.setAttribute('contenteditable','true')" >
     {{- .Content -}}
   </article>
 {{ end }}
