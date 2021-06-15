@@ -78,7 +78,8 @@
     padding: $padding-16;
     background: var(--gray-100);
     border-radius: $border-radius;
-    overflow-x: auto;
+    max-height: $highlight-max-height;
+    overflow: auto;
 
     code {
       padding: 0;
