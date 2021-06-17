@@ -9,7 +9,7 @@ body {
   color: var(--body-font-color);
   background: var(--body-background);
 
-  letter-spacing: 0.33px;
+  
   font-weight: $body-font-weight;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -26,7 +26,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-weight: $body-font-weight;
+  font-weight: $heading-font-weight;
 }
 
 a {
