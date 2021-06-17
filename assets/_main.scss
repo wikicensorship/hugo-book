@@ -114,6 +114,10 @@ ul.pagination {
     word-wrap: break-word;
   }
 
+  label {
+    font-weight: bolder;
+  }
+
   a.active {
     color: var(--color-link);
   }
