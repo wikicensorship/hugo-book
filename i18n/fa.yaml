@@ -17,4 +17,4 @@
   translation: تگ ها
 
 - id: bookSearchConfig
-  translation: '{ cache: true }'
+  translation: '{ cache: true, encode: false, rtl: true, split: /\s+/, tokenize: "forward"}'
