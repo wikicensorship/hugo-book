@@ -1,7 +1,7 @@
 @import "variables";
 
 .markdown {
-  line-height: 1.9;
+  line-height: 1.6;
 
   // remove padding at the beginning of page
   > :first-child {
@@ -14,8 +14,8 @@
   h4,
   h5,
   h6 {
-    font-weight: $heading-font-weight;
-    line-height: 1.8;
+    font-weight: normal;
+    line-height: 1;
     margin-top: 1.5em;
     margin-bottom: $padding-16;
 
@@ -190,3 +190,18 @@
     margin-bottom: 0;
   }
 }
+
+
+
+[lang|="fa"] body, [lang|="ar"] .markdown {
+  line-height: 1.9;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: $heading-font-weight;
+    line-height: 1.8;
+  }
