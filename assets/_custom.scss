@@ -1,3 +1,38 @@
 /* You can add custom styles here. */
 
 // @import "plugins/numbered";
+
+.btn-with-count {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 5px 16px;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 3px 12px;
+    text-decoration: none;
+  }
+  
+  .octicon-star {
+    display: inline-block;
+    overflow: visible!important;
+    vertical-align: text-bottom;
+    margin: 2px 4px!important;
+    vertical-align: text-bottom!important;
+    fill: currentColor;
+  }
+  

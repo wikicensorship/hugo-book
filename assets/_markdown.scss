@@ -194,6 +194,10 @@
 [lang|="fa"] .markdown, [lang|="ar"] .markdown {
   line-height: 1.9;
 
+  [dir="ltr"] pre {
+    line-height: 1.6;
+  }
+  
   h1,
   h2,
   h3,

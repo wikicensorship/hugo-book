@@ -1,0 +1,5 @@
+<script>var BookGitHubUser='{{ .Site.Params.BookGitHubUser }}';var BookGitHubRepo='{{ .Site.Params.BookGitHubRepo }}';</script>
+{{ $script := resources.Get "inject.js" | resources.Minify }}
+{{ with $script.Content }}
+  <script>{{ . | safeJS }}</script>
+{{ end }}
