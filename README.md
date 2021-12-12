@@ -42,13 +42,13 @@
 Navigate to your hugo project root and run:
 
 ```
-git submodule add https://github.com/alex-shpak/hugo-book themes/book
+git submodule add https://github.com/alex-shpak/hugo-book themes/hugo-book
 ```
 
-Then run hugo (or set `theme = "book"`/`theme: book` in configuration file)
+Then run hugo (or set `theme = "hugo-book"`/`theme: hugo-book` in configuration file)
 
 ```
-hugo server --minify --theme book
+hugo server --minify --theme hugo-book
 ```
 
 ### Install as hugo module
@@ -82,12 +82,12 @@ Below is an example on how to create a new site from scratch:
 ```sh
 hugo new site mydocs; cd mydocs
 git init
-git submodule add https://github.com/alex-shpak/hugo-book themes/book
-cp -R themes/book/exampleSite/content .
+git submodule add https://github.com/alex-shpak/hugo-book themes/hugo-book
+cp -R themes/hugo-book/exampleSite/content .
 ```
 
 ```sh
-hugo server --minify --theme book
+hugo server --minify --theme hugo-book
 ```
 
 ## Menu
@@ -188,7 +188,7 @@ disableKinds = ['taxonomy', 'taxonomyTerm']
   # Set source repository location.
   # Used for 'Last Modified' and 'Edit this page' links.
   BookRepo = 'https://github.com/alex-shpak/hugo-book'
-  
+
   # Specifies commit portion of the link to the page's last modified commit hash for 'doc' page
   # type.
   # Required if 'BookRepo' param is set.
@@ -264,9 +264,11 @@ bookSearchExclude = true
 
 ### Partials
 
-There are few empty partials you can override in `layouts/partials/`
+There are layout partials available for you to easily override components of the theme in `layouts/partials/`.
 
-| Partial                                            | Placement                                   |
+In addition to this, there are several empty partials you can override to easily add/inject code.
+
+| Empty Partial                                      | Placement                                   |
 | -------------------------------------------------- | ------------------------------------------- |
 | `layouts/partials/docs/inject/head.html`           | Before closing `<head>` tag                 |
 | `layouts/partials/docs/inject/body.html`           | Before closing `<body>` tag                 |
