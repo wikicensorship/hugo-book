@@ -9,7 +9,6 @@ body {
   color: var(--body-font-color);
   background: var(--body-background);
 
-  letter-spacing: 0.33px;
   font-weight: $body-font-weight;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -19,6 +18,15 @@ body {
   * {
     box-sizing: inherit;
   }
+}
+
+
+.light {
+  @include theme-light
+}
+
+.dark {
+  @include theme-dark
 }
 
 h1,
@@ -112,6 +120,10 @@ ul.pagination {
     color: inherit;
     cursor: pointer;
     word-wrap: break-word;
+  }
+
+  label {
+    font-weight: bolder;
   }
 
   a.active {
@@ -273,6 +285,43 @@ body[dir="rtl"] .book-menu {
   ul {
     padding-inline-start: 1.5em;
   }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      white-space: nowrap;
+      cursor: pointer;
+    }
+  }
+}
+
+.book-languages-list {
+  display: none;
+
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  padding: $padding-8 0;
+
+  background: var(--body-background);
+  box-shadow: 0 0 $padding-4 rgba(0, 0, 0, 0.1);
+
+  li img {
+    opacity: 0.25;
+  }
+
+  li.active img,
+  li:hover img {
+    opacity: initial;
+  }
+
+  a {
+    color: inherit;
+    padding: $padding-8 $padding-16;
+  }
 }
 
 // Responsive styles
@@ -351,6 +400,12 @@ body[dir="rtl"] .book-menu {
       transform: translateX(-$menu-width);
     }
   }
+}
+
+.book-menu .book-menu-content .book-languages .book-languages-list {
+  display: block;
+  position: relative;
+  box-shadow:none;
 }
 
 // Extra space for big screens

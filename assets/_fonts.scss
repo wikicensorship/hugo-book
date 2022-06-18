@@ -30,8 +30,68 @@
        url('fonts/roboto-mono-v13-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+@font-face {
+  font-family: Vazir;
+  src: local(''),
+       url('fonts/Vazir-Regular.woff2') format('woff2'),
+       url('fonts/Vazir-Regular.woff') format('woff');
+  font-weight: normal;
+  font-display:swap;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: local(''),
+       url('fonts/Vazir-Bold.woff2') format('woff2'),
+       url('fonts/Vazir-Bold.woff') format('woff');
+  font-weight: bold;
+  font-display:swap;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: local(''),
+       url('fonts/Vazir-Thin.woff2') format('woff2'),
+       url('fonts/Vazir-Thin.woff') format('woff');
+  font-weight: 100;
+  font-display:swap;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: local(''),
+       url('fonts/Vazir-Light.woff2') format('woff2'),
+       url('fonts/Vazir-Light.woff') format('woff');
+  font-weight: 300;
+  font-display:swap;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: local(''),
+       url('fonts/Vazir-Medium.woff2') format('woff2'),
+       url('fonts/Vazir-Medium.woff') format('woff');
+  font-weight: 500;
+  font-display:swap;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: local(''),
+       url('fonts/Vazir-Black.woff2') format('woff2'),
+       url('fonts/Vazir-Black.woff') format('woff');
+  font-weight: 900;
+  font-display:swap;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
+}
+
+[lang|="fa"] body, [lang|="ar"] body {
+  font-family: 'Vazir', 'Roboto', sans-serif;
+  font-weight:400;
+  line-height:1.8;
 }
 
 code {

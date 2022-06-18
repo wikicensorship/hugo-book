@@ -79,7 +79,8 @@
     padding: $padding-16;
     background: var(--gray-100);
     border-radius: $border-radius;
-    overflow-x: auto;
+    max-height: $highlight-max-height;
+    overflow: auto;
 
     code {
       padding: 0;
@@ -192,5 +193,23 @@
   }
   > :last-child {
     margin-bottom: 0;
+  }
+}
+
+[lang|="fa"] .markdown, [lang|="ar"] .markdown {
+  line-height: 1.9;
+
+  [dir="ltr"] pre {
+    line-height: 1.6;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: $heading-font-weight;
+    line-height: 1.8;
   }
 }

@@ -12,6 +12,7 @@ $font-size-16: 1rem !default;
 $border-radius: $padding-4 !default;
 
 $body-font-weight: normal !default;
+$heading-font-weight: normal !default;
 
 $body-min-width: 20rem !default;
 $container-max-width: 80rem !default;
@@ -19,6 +20,8 @@ $container-max-width: 80rem !default;
 $header-height: 3.5rem !default;
 $menu-width: 16rem !default;
 $toc-width: 16rem !default;
+
+$highlight-max-height: 400px;
 
 $mobile-breakpoint: $menu-width + $body-min-width * 1.2 + $toc-width !default;
 
@@ -37,8 +40,8 @@ $hint-colors: (
   --color-link: #0055bb;
   --color-visited-link: #8440f1;
 
-  --body-background: white;
-  --body-font-color: black;
+  --body-background: #f4f4f4;
+  --body-font-color: #303030;
 
   --icon-filter: none;
 
