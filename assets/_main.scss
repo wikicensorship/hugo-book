@@ -280,6 +280,10 @@ body[dir="rtl"] .book-menu {
   }
 }
 
+body[dir="rtl"] .book-footer img {
+  @include transform(rotate(180deg));
+}
+
 .book-comments {
   margin-top: $padding-16;
 }

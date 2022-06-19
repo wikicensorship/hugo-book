@@ -98,3 +98,11 @@ input.toggle {
   outline-color: currentColor;
   outline-color: -webkit-focus-ring-color;
 }
+
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -ms-transform: $transform;
+  -o-transform: $transform;
+  transform: $transform;
+}
