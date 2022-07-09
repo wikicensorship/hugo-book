@@ -38,6 +38,14 @@
   margin: 0 auto;
 }
 
+.mr-auto {
+  margin-right: auto;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
 .text-center {
   text-align: center;
 }
@@ -89,4 +97,12 @@ input.toggle {
   outline-style: auto;
   outline-color: currentColor;
   outline-color: -webkit-focus-ring-color;
+}
+
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -ms-transform: $transform;
+  -o-transform: $transform;
+  transform: $transform;
 }
